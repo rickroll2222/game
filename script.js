@@ -25,13 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowUp' || e.key === 'W' || e.key === 'w') {
+        if (e.key === 'ArrowUp' || e.key === 'w' || e.key === 'W') {
             jump();
         }
-        if (e.key === 'ArrowLeft' || e.key === 'A' || e.key === 'a') {
+        if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') {
             moveLeft();
         }
-        if (e.key === 'ArrowRight' || e.key === 'D' || e.key === 'd') {
+        if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') {
             moveRight();
         }
     });
