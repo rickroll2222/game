@@ -25,9 +25,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowUp' || e.key === ' ') { // Spacebar can also trigger jump
+        if (e.key === 'ArrowUp' || e.key === 'W' || e.key === 'w') {
             jump();
         }
+        if (e.key === 'ArrowLeft' || e.key === 'A' || e.key === 'a') {
+            moveLeft();
+        }
+        if (e.key === 'ArrowRight' || e.key === 'D' || e.key === 'd') {
+            moveRight();
+        }
     });
+
+    function moveLeft() {
+        if (playerLeft > 0) {
+            playerLeft -= 5; // Adjust movement speed as needed
+            player.style.left = playerLeft + 'px';
+        }
+    }
+
+    function moveRight() {
+        if (playerLeft < 750) { // Adjust based on game width and player width
+            playerLeft += 5; // Adjust movement speed as needed
+            player.style.left = playerLeft + 'px';
+        }
+    }
 
 });
