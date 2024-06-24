@@ -25,14 +25,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowUp' || e.key === 'w' || e.key === 'W') {
-            jump();
-        }
-        if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') {
-            moveLeft();
-        }
-        if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') {
-            moveRight();
+        switch (e.key) {
+            case 'ArrowUp':
+            case 'w':
+            case 'W':
+                jump();
+                break;
+            case 'ArrowLeft':
+            case 'a':
+            case 'A':
+                moveLeft();
+                break;
+            case 'ArrowRight':
+            case 'd':
+            case 'D':
+                moveRight();
+                break;
         }
     });
 
