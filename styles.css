@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #6ab04c;
+}
+
+#game {
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    background-color: #71c5cf;
+    position: relative;
+}
+
+#player {
+    width: 50px;
+    height: 50px;
+    background-color: #f55c47;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
